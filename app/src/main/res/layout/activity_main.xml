@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtwilayah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wilayah"
+        android:layout_below="@+id/editTahun"
+        android:layout_alignParentStart="true"/>
+
+    <Spinner
+        android:id="@+id/spProvinsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/provinsi"
+        android:layout_below="@+id/spKota"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+        android:id="@+id/spKota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/kota"
+        android:layout_below="@+id/txtwilayah"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtBiodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biodata"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBiodata"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Nama"/>
+
+    <EditText
+        android:id="@+id/editTahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNama"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editNama"
+        android:hint="Tahun Lahir"
+         />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_below="@+id/spProvinsi"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hasil"
+        android:id="@+id/txtHasil"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="38dp"/>
+</RelativeLayout>
